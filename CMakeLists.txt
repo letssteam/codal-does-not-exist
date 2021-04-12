@@ -1,4 +1,4 @@
-project(codal-stm32-PNUCLEO_WB55RG)
+project(codal-does-not-exist)
 
 include("${CODAL_UTILS_LOCATION}")
 
@@ -22,13 +22,4 @@ string(TOLOWER "${CODAL_TARGET_PROCESSOR}" TARGET_PROCESSOR)
 include_directories(${INCLUDE_DIRS} ${TOP_LEVEL_INCLUDE_DIRS} ${MODEL_INCLUDE_DIRS} ${SAMPLES_INCLUDE_DIRS})
 
 # create our target
-add_library(codal-stm32-PNUCLEO_WB55RG ${TOP_LEVEL_SOURCE_FILES} ${TOP_LEVEL_SOURCE_FILES0} ${MODEL_SOURCE_FILES} ${MODEL_SOURCE_FILES0} ${SAMPLES_SOURCE_FILES} ${SAMPLES_SOURCE_FILES0})
-
-target_link_libraries(
-    codal-stm32-PNUCLEO_WB55RG
-    codal-core
-    codal-stm32   
-)
-
-# expose it to parent cmake.
-target_include_directories(codal-stm32-PNUCLEO_WB55RG PUBLIC ${MODEL_INCLUDE_DIRS} ${TOP_LEVEL_INCLUDE_DIRS} ${SAMPLES_INCLUDE_DIRS})
+add_library(codal-does-not-exist ${TOP_LEVEL_SOURCE_FILES} ${TOP_LEVEL_SOURCE_FILES0} ${MODEL_SOURCE_FILES} ${MODEL_SOURCE_FILES0} ${SAMPLES_SOURCE_FILES} ${SAMPLES_SOURCE_FILES0})
